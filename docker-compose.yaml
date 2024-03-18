@@ -11,3 +11,5 @@ services:
       - POSTGRES_PASSWORD=1234
     volumes:
       - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
