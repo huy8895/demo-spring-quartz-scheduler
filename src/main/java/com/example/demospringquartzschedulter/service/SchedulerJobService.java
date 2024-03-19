@@ -86,7 +86,7 @@ public class SchedulerJobService {
 
   public SchedulerJobInfoDTO scheduleNewJob(CreateJobDto createJobDto) throws JsonProcessingException {
     SchedulerJobInfo jobInfo = new SchedulerJobInfo();
-    String packageName = "vn.com.msb.bpm.schedule.service.";
+    String packageName = "com.example.demospringquartzschedulter.service.";
     jobInfo.setJobClass(packageName + createJobDto.getJobClass());
     jobInfo.setCronJob(true);
     jobInfo.setJobName(createJobDto.getJobName());

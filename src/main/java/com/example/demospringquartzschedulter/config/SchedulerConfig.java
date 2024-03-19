@@ -20,7 +20,7 @@ public class SchedulerConfig {
   private final QuartzProperties quartzProperties;
 
   @Autowired
-  public SchedulerConfig(DataSource dataSource,
+  public SchedulerConfig(@Qualifier("scheduleDataSource")DataSource dataSource,
       ApplicationContext applicationContext,
       QuartzProperties quartzProperties) {
     this.dataSource = dataSource;
