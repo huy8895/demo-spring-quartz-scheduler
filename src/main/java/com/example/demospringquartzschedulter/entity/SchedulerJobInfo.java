@@ -66,8 +66,11 @@ public class SchedulerJobInfo {
   @Column(name = "url")
   private String url;
 
+  @Column(name = "created_date")
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy HH:mm:ss", timezone = "Asia/Bangkok")
   private Timestamp createdDate;
+
+  @Column(name = "updated_at")
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy HH:mm:ss", timezone = "Asia/Bangkok")
   private Timestamp updatedAt;
 }
